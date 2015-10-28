@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+  <script type="text/html" id="listTmpl">
+    <article data-id="<%= id %>">
+      <li><%= content %></li>
+
+      <li><label><input type="checkbox" class="checkbox" value="complete?"></li>
+    </article>
+  </script>
+</head>
+<body>
+<header>
+  <h1>Things to do!</h1>
+</header>
+  <div class="container">
+    <section class="all active-section">
+      <!-- <h1>All of your todo items</h1> -->
+    </section>
+    <section class="active">
+      <!-- <h1>Active items</h1> -->
+    </section>
+    <section class="completed">
+    </section>
+    <!-- <section class="clearCompleted">
+    </section> -->
+    <aside>
+      <form class="">
+        <textarea name="content" rows="1" cols="25" placeholder="To do item"></textarea>
+        <button type="submit" name="button">Add item</button>
+      </form>
+    </aside>
+
+  </div>
+  <footer>
+    <nav>
+      <ul>
+        <li id="count"><a rel="count" href="">Count</a></li>
+        <li><a rel="all" href="">All</a></li>
+        <li><a rel="active" href="">Active</a></li>
+        <li><a rel="completed" href="">Completed</a></li>
+        <li><a rel="clearCompleted" href=""> Remove Completed</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+
+  <script src="data.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
