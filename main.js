@@ -53,6 +53,21 @@ var page = {
           var articleId = $(this).closest('article').data('id');
           page.deleteArticle(articleId);
         }
+
+        //****** What needs to happen here is I need to add a default status
+        //to the array of items!  Then I can change that status on click which
+        //I can then sort/filter for the Actice & Completed list.  Also this
+        //can be used for the remove function
+        //************
+
+        //******Here is an exapmle for the click to edit******
+        //$(this).attr('contenteditable', 'true');
+        //$(this).keydown(function(event) {
+        //var keyCode = (event.keyCode ? event.keyCode : event.which);
+        //if (keyCode === 13)
+        //})
+        //****end of click to edit with keyCode******
+
         // else if(sectionClass === ".count") {
         //   var totalCount = todoData.length;
         //   $('#count').html(totalCount + " Items Remain");
